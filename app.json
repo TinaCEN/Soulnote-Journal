@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Soulnote Journal",
+    "slug": "soulnote-journal",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#2C1810"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.soulnote.journal",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "This app needs access to your microphone to record your emotional expressions and create personalized journal entries.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to save and share your generated Soulnote cards."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#2C1810"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-av"
+    ]
+  }
+}
