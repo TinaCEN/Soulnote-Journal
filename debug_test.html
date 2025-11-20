@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Test - Soulnote</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #output {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 20px;
+            background: #f5f5f5;
+            white-space: pre-wrap;
+            font-family: monospace;
+        }
+        img {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 Debug Test Page</h1>
+    
+    <h2>1. Test Text Analysis + Poster</h2>
+    <button onclick="testTextAnalysis()">Test Text Analysis</button>
+    
+    <h2>2. Test Voice Upload</h2>
+    <input type="file" id="audioFile" accept="audio/*">
+    <button onclick="testVoiceUpload()">Test Voice Upload</button>
+    
+    <h2>Output:</h2>
+    <div id="output">Results will appear here...</div>
+    
+    <div id="posterContainer"></div>
+
+    <script>
+        const API_BASE = 'http://localhost:5000/api';
+
+        async function testTextAnalysis() {
+            const output = document.getElementById('output');
+            output.textContent = 'Testing text analysis...\n';
+
+            try {
+                // Step 1: Analyze text
+                console.log('Step 1: Analyzing text...');
+                const analyzeResponse = await fetch(`${API_BASE}/analyze/text`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ text: 'I feel happy and peaceful today' })
+                });
+
+                if (!analyzeResponse.ok) {
+                    throw new Error(`Analysis failed: ${analyzeResponse.status}`);
+                }
+
+                const analysisData = await analyzeResponse.json();
+                output.textContent += '\n✅ Analysis successful:\n';
+                output.textContent += JSON.stringify(analysisData, null, 2);
+
+                // Step 2: Generate poster
+                console.log('Step 2: Generating poster...');
+                output.textContent += '\n\n🎨 Generating poster...\n';
+                
+                const posterResponse = await fetch(`${API_BASE}/generate/poster`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(analysisData)
+                });
+
+                if (!posterResponse.ok) {
+                    const errorText = await posterResponse.text();
+                    throw new Error(`Poster failed: ${posterResponse.status} - ${errorText}`);
+                }
+
+                const posterData = await posterResponse.json();
+                output.textContent += '\n✅ Poster generated:\n';
+                output.textContent += JSON.stringify(posterData, null, 2);
+
+                // Display poster
+                const posterUrl = `http://localhost:5000${posterData.poster_url}`;
+                output.textContent += `\n\n🖼️ Poster URL: ${posterUrl}\n`;
+                
+                const img = document.createElement('img');
+                img.src = posterUrl;
+                img.onload = () => output.textContent += '✅ Image loaded successfully!\n';
+                img.onerror = () => output.textContent += '❌ Image failed to load!\n';
+                
+                const container = document.getElementById('posterContainer');
+                container.innerHTML = '';
+                container.appendChild(img);
+
+            } catch (error) {
+                output.textContent += `\n❌ Error: ${error.message}\n`;
+                console.error('Test failed:', error);
+            }
+        }
+
+        async function testVoiceUpload() {
+            const output = document.getElementById('output');
+            const fileInput = document.getElementById('audioFile');
+            
+            if (!fileInput.files.length) {
+                alert('Please select an audio file first');
+                return;
+            }
+
+            output.textContent = 'Testing voice upload...\n';
+
+            try {
+                const formData = new FormData();
+                formData.append('audio', fileInput.files[0]);
+
+                output.textContent += `File: ${fileInput.files[0].name}\n`;
+                output.textContent += `Size: ${fileInput.files[0].size} bytes\n`;
+                output.textContent += `Type: ${fileInput.files[0].type}\n\n`;
+                output.textContent += 'Uploading...\n';
+
+                const response = await fetch(`${API_BASE}/analyze/voice`, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                output.textContent += `Response status: ${response.status}\n`;
+
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    throw new Error(`Upload failed: ${response.status} - ${errorText}`);
+                }
+
+                const data = await response.json();
+                output.textContent += '\n✅ Voice analysis successful:\n';
+                output.textContent += JSON.stringify(data, null, 2);
+
+            } catch (error) {
+                output.textContent += `\n❌ Error: ${error.message}\n`;
+                console.error('Test failed:', error);
+            }
+        }
+    </script>
+</body>
+</html>

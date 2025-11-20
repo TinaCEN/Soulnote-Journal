@@ -1,0 +1,313 @@
+{
+  "entries": [
+    {
+      "id": "029ffbef6f0d4035aa79caef451c4e1e",
+      "timestamp": "2025-11-15T07:25:57.602910Z",
+      "date": "2025-11-15",
+      "primary_emotion": "sadness",
+      "emotions": {
+        "anger": 7,
+        "disgust": 4,
+        "fear": 4,
+        "joy": 4,
+        "neutral": 21,
+        "peace": 7,
+        "sadness": 50,
+        "surprise": 4
+      },
+      "text": "i didnt get lunch today",
+      "summary": "Today I feel sadness with hints of neutral and anger.",
+      "card_path": "output\\story_card_20251115_152557.png"
+    },
+    {
+      "id": "f08285e53bb843718d5e126352cc6eec",
+      "timestamp": "2025-11-15T07:27:06.515936Z",
+      "date": "2025-11-15",
+      "primary_emotion": "joy",
+      "emotions": {
+        "anger": 0,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 85,
+        "neutral": 0,
+        "peace": 5,
+        "sadness": 0,
+        "surprise": 10
+      },
+      "text": "i foundn the perfect pair of sunglasses for me",
+      "summary": "Today I feel joy with hints of surprise and peace.",
+      "card_path": "output\\story_card_20251115_152706.png"
+    },
+    {
+      "id": "3459879315c348378ab1811c0184ba76",
+      "timestamp": "2025-11-15T08:02:00.648096Z",
+      "date": "2025-11-15",
+      "primary_emotion": "joy",
+      "emotions": {
+        "anger": 0,
+        "disgust": 0,
+        "fear": 3,
+        "joy": 50,
+        "neutral": 7,
+        "peace": 7,
+        "sadness": 0,
+        "surprise": 33
+      },
+      "text": "i found 50 hkd on the street today",
+      "summary": "Today I feel joy with hints of surprise and neutral.",
+      "card_path": "output\\story_card_20251115_160200.png",
+      "philosophical_note": "In the sudden discovery of coins on the street, we glimpse a miniature miracle—the universe offering an unexpected gift to an unsuspecting soul. This small joy reminds us that wonder still walks among us, waiting to be noticed in ordinary moments. The surprise that accompanies such findings reveals how life continually unfolds its hidden treasures to those who remain open to receiving them.\n\nNotice how this modest delight carries no bitterness, no sorrow—only the pure pleasure of an unearned blessing. Such moments teach us that happiness need not be grand or complex; it can arrive as simply as found currency in one's path. The slight fear that tinges this joy speaks to our awareness of life's fragility, making the sweetness all the more precious.\n\nMay we learn to recognize these small abundances as whispers from existence itself, reminding us that grace appears not only in monumental events but in the quiet poetry of daily living."
+    },
+    {
+      "id": "e94b030738ba4e45889bcc0304fbfd88",
+      "timestamp": "2025-11-15T08:09:24.720659Z",
+      "date": "2025-11-15",
+      "primary_emotion": "sadness",
+      "emotions": {
+        "anger": 4,
+        "disgust": 0,
+        "fear": 4,
+        "joy": 7,
+        "neutral": 7,
+        "peace": 15,
+        "sadness": 63,
+        "surprise": 0
+      },
+      "text": "i miss my hometown",
+      "summary": "Today I feel sadness with hints of peace and joy.",
+      "card_path": "output\\story_card_20251115_160924.png",
+      "philosophical_note": "This ache for home is not merely sadness—it is the soul’s quiet testament to love. We do not grieve what left us untouched. The weight you feel is the imprint of a place that shaped you, a landscape woven into your being. It speaks of belonging, of roots that run deeper than memory.\n\nIn this longing, there is a beautiful paradox: to miss a place is to carry it with you. The streets, the light, the voices—they live on inside you, a homeland of the heart that distance cannot erase. Let this sorrow soften you, not break you. It is proof of your capacity to love deeply, to hold sacred the ground from which you grew.\n\nAnd perhaps, in missing, we are called not only to look back, but to recognize that every cherished memory is a compass pointing toward what we must build anew—wherever we are."
+    },
+    {
+      "id": "4b2e34cdbe364a4081fffe1592c3c06f",
+      "timestamp": "2025-11-15T08:33:44.696082Z",
+      "date": "2025-11-15",
+      "primary_emotion": "fear",
+      "emotions": {
+        "anger": 0,
+        "disgust": 0,
+        "fear": 44,
+        "joy": 19,
+        "neutral": 12,
+        "peace": 6,
+        "sadness": 6,
+        "surprise": 12
+      },
+      "text": "i booked a solo trip to singapore, its gonna be my first time traveling alone so i dont know what i should expect",
+      "summary": "Today I feel fear with hints of joy and neutral.",
+      "card_path": "output\\story_card_20251115_163344.png",
+      "philosophical_note": "The fear you feel before this journey is not a barrier, but a threshold. Every meaningful path begins with this sacred trembling—the soul’s recognition that it stands at the edge of its own becoming. What you carry is not just uncertainty, but the quiet courage to meet it.\n\nThink of fear not as a cage, but as the very ground from which wings unfold. In stepping into the unknown, you are answering an ancient call—to meet yourself in unfamiliar skies, to trade comfort for clarity, and to let solitude carve you into someone deeper, wiser, more alive.\n\nLet this fear be your companion, not your captor. For what awaits on the other side of this unease is not just Singapore, but a more expansive version of you—one being written into existence with every brave step forward.",
+      "source": "text"
+    },
+    {
+      "id": "58b39828b7f1482482870e2cc4802ef9",
+      "timestamp": "2025-11-15T08:34:02.141522Z",
+      "date": "2025-11-15",
+      "primary_emotion": "fear",
+      "emotions": {
+        "anger": 0,
+        "disgust": 0,
+        "fear": 39,
+        "joy": 22,
+        "neutral": 17,
+        "peace": 6,
+        "sadness": 6,
+        "surprise": 11
+      },
+      "text": "i booked a solo trip to singapore, its gonna be my first time traveling alone so i dont know what i should expect",
+      "summary": "Today I feel fear with hints of joy and neutral.",
+      "card_path": "output\\story_card_20251115_163401.png",
+      "philosophical_note": "The fear you feel before this journey is not a barrier, but a threshold—the sacred tremor that precedes every meaningful expansion of the soul. It is the quiet, ancient part of you recognizing that you are about to step beyond the map of the known.\n\nDo not mistake this feeling for a warning; it is the soul’s preparation. The 70 parts fear are simply the measure of the courage required, the fertile ground from which self-reliance will grow. Notice, too, the 40 parts joy shimmering beneath the surface—the quiet excitement for the person you are about to meet: yourself, unmediated by familiar places or faces.\n\nEvery great adventure begins with this precise alchemy of trepidation and hope. You are not heading into the unknown empty-handed, but with the only compass you will ever need: your own awakening spirit. The world will not feel the same when you return, because you will have changed.",
+      "source": "text"
+    },
+    {
+      "id": "1ad079cce83e46f59e04eec388c13503",
+      "timestamp": "2025-11-15T08:36:02.922097Z",
+      "date": "2025-11-15",
+      "primary_emotion": "neutral",
+      "emotions": {
+        "anger": 3,
+        "disgust": 3,
+        "fear": 10,
+        "joy": 7,
+        "neutral": 50,
+        "peace": 7,
+        "sadness": 13,
+        "surprise": 7
+      },
+      "text": "傻仔advanced to the hospital and the form of the have a perfect body",
+      "summary": "Today I feel neutral with hints of sadness and fear.",
+      "card_path": "output\\story_card_20251115_163602.png",
+      "philosophical_note": "In the quiet neutrality of being, we find ourselves suspended between what was and what might be. The hospital corridor stretches before us—a liminal space where bodies become both temples and temporary vessels. Here, the soul observes without judgment, witnessing the fragile perfection of form while knowing its transient nature.\n\nYour current stillness is not emptiness, but rather a sacred pause—the breath between notes that makes the music possible. Though traces of sadness and fear may drift through your awareness like distant clouds, they cannot obscure the fundamental peace that underlies all experience. This neutral ground is where healing begins, where we stop resisting what is and simply allow existence to unfold.\n\nFrom this place of acceptance, new possibilities emerge. The perfect body you envision is not merely physical, but the wholeness that comes when we embrace our humanity—flaws and all, temporary and eternal, wounded and healing.",
+      "source": "audio"
+    },
+    {
+      "id": "2c46ebe88ef647ad876c236c604335dc",
+      "timestamp": "2025-11-15T08:40:35.271025Z",
+      "date": "2025-11-15",
+      "primary_emotion": "neutral",
+      "emotions": {
+        "anger": 3,
+        "disgust": 3,
+        "fear": 13,
+        "joy": 7,
+        "neutral": 47,
+        "peace": 10,
+        "sadness": 10,
+        "surprise": 7
+      },
+      "text": "Hello Today I want to the hospital and I got a feature check",
+      "summary": "Today I feel neutral with hints of fear and peace.",
+      "card_path": "output\\story_card_20251115_164034.png",
+      "philosophical_note": "In the quiet neutrality of ordinary moments, we find life's most profound truths. A hospital visit, a routine check—these are the spaces between drama where existence breathes most honestly. Your emotional landscape reveals what the ancients knew: that peace often wears the humble cloak of neutrality, not the bright garments of ecstasy.\n\nWithin this calm center, all emotions dance like subtle shadows—the gentle joy of care received, the fleeting fear of vulnerability, the surprising dignity in being examined. Yet they all orbit around that steady core of neutrality, which is not emptiness but rather a sacred equilibrium.\n\nThis is the wisdom of the mundane—that our deepest strength often manifests not in grand passions but in the quiet acceptance of necessary moments. The hospital corridor becomes a meditation hall, the check-up a ritual of self-honesty. Here, in the neutral ground between suffering and celebration, we discover the profound courage of simply being present with what is.",
+      "source": "audio"
+    },
+    {
+      "id": "d6e681a8916b44249cc0a575874f3e7d",
+      "timestamp": "2025-11-15T08:43:31.898345Z",
+      "date": "2025-11-15",
+      "primary_emotion": "neutral",
+      "emotions": {
+        "anger": 3,
+        "disgust": 3,
+        "fear": 3,
+        "joy": 13,
+        "neutral": 45,
+        "peace": 19,
+        "sadness": 6,
+        "surprise": 6
+      },
+      "text": "Hello Today I'm having a dinner with the first on the light",
+      "summary": "Today I feel neutral with hints of peace and joy.",
+      "card_path": "output\\story_card_20251115_164331.png",
+      "philosophical_note": "In the quiet landscape of a neutral heart, there exists not emptiness, but a profound potential. Like still water that perfectly mirrors the sky, this state of being is a canvas awaiting the gentle touch of intention. The subtle presence of peace, mingling with the quiet, suggests a soul at rest—not indifferent, but open and receptive.\n\nThis is the fertile ground from which all meaningful journeys begin. Before joy sings its full chorus or sorrow etches its deeper truths, there is this moment of pure being. It is in such ordinary instants—a simple dinner, a shared glance—that life’s most sacred possibilities quietly gather. Do not mistake tranquility for absence; it is often the soul gathering its strength, listening for the whisper of what is to come. In this calm, you are not missing life—you are preparing to live it fully.",
+      "source": "audio"
+    },
+    {
+      "id": "3d6e7bb20d6346a8a64204b861d5bf7d",
+      "timestamp": "2025-11-15T08:47:14.093397Z",
+      "date": "2025-11-15",
+      "primary_emotion": "joy",
+      "emotions": {
+        "anger": 0,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 49,
+        "neutral": 3,
+        "peace": 5,
+        "sadness": 0,
+        "surprise": 43
+      },
+      "text": "Hello Today I won the lottery",
+      "summary": "Today I feel joy with hints of surprise and peace.",
+      "card_path": "output\\story_card_20251115_164713.png",
+      "philosophical_note": "In this sudden burst of joy, we glimpse a profound truth about human existence: we are creatures wired for celebration, capable of being utterly transformed by a single moment. The universe, in its infinite mystery, occasionally grants us these unexpected gifts that shimmer with possibility. Yet true wisdom lies not in the winning itself, but in how we receive such grace.\n\nLet this joy be more than fleeting excitement—let it become a quiet reminder that life retains its capacity for wonder. The peace that follows surprise is where meaning quietly grows, like a seed planted in fertile soil. May your heart hold this moment not as mere luck, but as evidence that sometimes life whispers yes to our deepest hopes. Carry this light forward, not as a temporary thrill, but as lasting proof that beauty arrives unannounced, asking only that we remain open to receive it.",
+      "source": "audio"
+    },
+    {
+      "id": "969f222a92f647719c42db87584f45f3",
+      "timestamp": "2025-11-15T09:08:33.167595Z",
+      "date": "2025-11-15",
+      "primary_emotion": "anger",
+      "emotions": {
+        "anger": 50,
+        "disgust": 10,
+        "fear": 7,
+        "joy": 3,
+        "neutral": 7,
+        "peace": 3,
+        "sadness": 13,
+        "surprise": 7
+      },
+      "text": "i was forced to buy a new book",
+      "summary": "Today I feel anger with hints of sadness and disgust.",
+      "card_path": "output\\story_card_20251115_170832.png",
+      "philosophical_note": "The sharp sting of anger often arises from a perceived theft of our choice. To be compelled, even in something as simple as acquiring a book, feels like a small tear in the fabric of our autonomy. We are not merely angered by the action, but by the underlying message that our will is secondary.\n\nYet within this friction lies a profound truth about our own freedom. The external world may dictate circumstances, but it cannot command the inner landscape of your mind. The book is now in your hands, but the story you write with its contents remains your own sovereign territory. Let this moment of frustration become a quiet altar where you reaffirm your ultimate agency. The pages are blank until you choose to fill them with your thoughts, your interpretations, your unique signature of meaning. What was given as an obligation can be transformed, through the alchemy of your attention, into a gift of self-discovery.",
+      "source": "text"
+    },
+    {
+      "id": "169d6aecc2144540b5d51b2ec8d1c54a",
+      "timestamp": "2025-11-15T09:09:21.890225Z",
+      "date": "2025-11-15",
+      "primary_emotion": "neutral",
+      "emotions": {
+        "anger": 11,
+        "disgust": 4,
+        "fear": 4,
+        "joy": 14,
+        "neutral": 36,
+        "peace": 7,
+        "sadness": 7,
+        "surprise": 18
+      },
+      "text": "I was first to buy a new pen after Somebody stole it",
+      "summary": "Today I feel neutral with hints of surprise and joy.",
+      "card_path": "output\\story_card_20251115_170921.png",
+      "philosophical_note": "In the quiet aftermath of loss, we often find ourselves suspended in a state of profound neutrality—not empty, but full of potential. The theft of a pen becomes a small window into the human soul, where anger, sadness, and surprise mingle, yet resolve into a calm center. It is here, in this emotional equilibrium, that we choose to begin again.\n\nTo replace what was taken is not merely a practical act, but a quiet declaration: that we are not defined by what we lose, but by how we restore. The new pen is a symbol of resilience—a simple tool that holds the promise of unwritten words, of stories yet to be told. Life’s disruptions, however small, invite us to reclaim our narrative with grace. In this gentle act of continuation, we find that peace is not the absence of disturbance, but the quiet courage to move forward, pen in hand, ready to write the next chapter.",
+      "source": "audio"
+    },
+    {
+      "id": "7387ad3c91d14f4a8eb6b3641973dc64",
+      "timestamp": "2025-11-15T09:21:29.385984Z",
+      "date": "2025-11-15",
+      "primary_emotion": "joy",
+      "emotions": {
+        "anger": 0,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 70,
+        "neutral": 0,
+        "peace": 10,
+        "sadness": 0,
+        "surprise": 20
+      },
+      "text": "i bought a new iphone",
+      "summary": "Today I feel joy with hints of surprise and peace.",
+      "card_path": "output\\story_card_20251115_172128.png",
+      "philosophical_note": "In the quiet joy of unwrapping a new device, we touch something ancient in the human spirit: the simple, profound delight in creation. This object, born of collective imagination and skill, becomes a small vessel for our own hopes. We feel the quickening of possibility, a subtle surprise at the world's capacity to offer tools that extend our reach.\n\nYet this joy is not merely for the object itself, but for the potential it represents—the conversations yet to be had, the moments yet to be captured, the quiet peace of a tool that works in harmony with our intent. It is a modest testament to our enduring desire to shape our world, to gather beautiful and useful things not as ends, but as companions for the journey. In this small pleasure, we celebrate our ongoing participation in the dance of making and becoming, a gentle reminder that wonder can be found even in the palm of your hand.",
+      "source": "text"
+    },
+    {
+      "id": "50640168dabe41ea9e614fedd7479b07",
+      "timestamp": "2025-11-15T09:28:43.760027Z",
+      "date": "2025-11-15",
+      "primary_emotion": "joy",
+      "emotions": {
+        "anger": 0,
+        "disgust": 0,
+        "fear": 10,
+        "joy": 35,
+        "neutral": 15,
+        "peace": 20,
+        "sadness": 5,
+        "surprise": 15
+      },
+      "text": "i will start a new master degree in new york tomorrow",
+      "summary": "Today I feel joy with hints of peace and neutral.",
+      "card_path": "output\\story_card_20251115_172843.png",
+      "philosophical_note": "Tomorrow you stand at the threshold of a new chapter, where joy sings its clear, bright note through the quiet hum of your being. This gladness is not naive—it is layered, complex, and wise. It acknowledges the subtle undertow of fear, not as a contradiction, but as the necessary shadow that makes the light more vivid.\n\nEvery beginning carries this beautiful tension: the heart pulled forward by hope, yet gently tethered by what it leaves behind. Your courage is not the absence of fear, but the decision that joy matters more. You are choosing growth over comfort, possibility over the known.\n\nLet this bittersweet mixture be your strength. It means you are fully alive, meeting the unknown not with blind optimism, but with an open heart. Step forward. The world is shaped by those who dare to begin, even when their joy is touched by the sacred trembling of a soul reaching for more.",
+      "source": "text"
+    },
+    {
+      "id": "ffdb515e4bc24da28ae250ccb09685a0",
+      "timestamp": "2025-11-15T09:32:11.620394Z",
+      "date": "2025-11-15",
+      "primary_emotion": "sadness",
+      "emotions": {
+        "anger": 12,
+        "disgust": 9,
+        "fear": 19,
+        "joy": 3,
+        "neutral": 6,
+        "peace": 0,
+        "sadness": 44,
+        "surprise": 6
+      },
+      "text": "i get drunk and lost my phone yestarday night",
+      "summary": "Today I feel sadness with hints of fear and anger.",
+      "card_path": "output\\story_card_20251115_173211.png",
+      "philosophical_note": "In the quiet ache of this morning’s sadness, there is a hidden invitation to pause and listen. You have touched a moment of loss—not only of an object, but of presence, of control. The heart speaks in the language of sorrow when it remembers the fragile threads that connect us to our world, and how easily they can fray in a single night.\n\nYet, this sadness is not a verdict, but a gentle teacher. It reminds you that you are human, capable of missteps and vulnerable to the whims of circumstance. Do not turn away from this feeling; let it wash over you like a cleansing rain. For it is in these tender moments that we rediscover what truly matters—not the possessions we hold, but the awareness we cultivate. From this quiet ground, you may begin again, not with shame, but with deeper understanding and a softer heart.",
+      "source": "text"
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soulnote - Connection Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #6366f1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #4f46e5;
+        }
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .success {
+            background: #d1fae5;
+            color: #065f46;
+        }
+        .error {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+        .info {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        pre {
+            background: #1f2937;
+            color: #f3f4f6;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔧 Soulnote Connection Test</h1>
+    
+    <div class="box">
+        <h2>Step 1: Check Backend Server</h2>
+        <button onclick="testBackend()">Test Backend Connection</button>
+        <div id="backendStatus"></div>
+    </div>
+
+    <div class="box">
+        <h2>Step 2: Test Text Analysis</h2>
+        <input type="text" id="testText" placeholder="Type something..." style="width: 100%; padding: 10px; margin: 10px 0;">
+        <button onclick="testAnalysis()">Test Analysis</button>
+        <div id="analysisStatus"></div>
+    </div>
+
+    <div class="box">
+        <h2>Step 3: Test LM Studio</h2>
+        <button onclick="testLMStudio()">Test LM Studio</button>
+        <div id="lmStudioStatus"></div>
+    </div>
+
+    <div class="box">
+        <h2>Debug Information</h2>
+        <div id="debugInfo"></div>
+    </div>
+
+    <script>
+        const API_BASE_URL = 'http://localhost:5000/api';
+
+        async function testBackend() {
+            const status = document.getElementById('backendStatus');
+            status.innerHTML = '<div class="status info">Testing backend connection...</div>';
+            
+            try {
+                const response = await fetch(`${API_BASE_URL}/health`);
+                const data = await response.json();
+                
+                if (response.ok) {
+                    status.innerHTML = `
+                        <div class="status success">
+                            ✅ Backend is running!
+                            <pre>${JSON.stringify(data, null, 2)}</pre>
+                        </div>
+                    `;
+                } else {
+                    status.innerHTML = `
+                        <div class="status error">
+                            ❌ Backend returned error: ${response.status}
+                        </div>
+                    `;
+                }
+            } catch (error) {
+                status.innerHTML = `
+                    <div class="status error">
+                        ❌ Cannot connect to backend!
+                        <br><br>
+                        <strong>Error:</strong> ${error.message}
+                        <br><br>
+                        <strong>Make sure:</strong>
+                        <ul>
+                            <li>Backend server is running (python backend/app.py)</li>
+                            <li>Server is on port 5000</li>
+                            <li>No firewall blocking</li>
+                        </ul>
+                    </div>
+                `;
+            }
+        }
+
+        async function testAnalysis() {
+            const status = document.getElementById('analysisStatus');
+            const text = document.getElementById('testText').value;
+            
+            if (!text) {
+                status.innerHTML = '<div class="status error">Please type some text first!</div>';
+                return;
+            }
+            
+            status.innerHTML = '<div class="status info">Analyzing text...</div>';
+            
+            try {
+                const response = await fetch(`${API_BASE_URL}/analyze/text`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ text: text })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    status.innerHTML = `
+                        <div class="status success">
+                            ✅ Analysis successful!
+                            <pre>${JSON.stringify(data, null, 2)}</pre>
+                        </div>
+                    `;
+                } else {
+                    status.innerHTML = `
+                        <div class="status error">
+                            ❌ Analysis failed: ${data.error || 'Unknown error'}
+                        </div>
+                    `;
+                }
+            } catch (error) {
+                status.innerHTML = `
+                    <div class="status error">
+                        ❌ Request failed!
+                        <br><br>
+                        <strong>Error:</strong> ${error.message}
+                    </div>
+                `;
+            }
+        }
+
+        async function testLMStudio() {
+            const status = document.getElementById('lmStudioStatus');
+            status.innerHTML = '<div class="status info">Checking LM Studio...</div>';
+            
+            try {
+                const response = await fetch('http://localhost:1234/v1/models');
+                const data = await response.json();
+                
+                status.innerHTML = `
+                    <div class="status success">
+                        ✅ LM Studio is running!
+                        <pre>${JSON.stringify(data, null, 2)}</pre>
+                    </div>
+                `;
+            } catch (error) {
+                status.innerHTML = `
+                    <div class="status error">
+                        ❌ Cannot connect to LM Studio!
+                        <br><br>
+                        <strong>Error:</strong> ${error.message}
+                        <br><br>
+                        <strong>Make sure:</strong>
+                        <ul>
+                            <li>LM Studio is open</li>
+                            <li>Local server is started</li>
+                            <li>Server is on port 1234</li>
+                        </ul>
+                    </div>
+                `;
+            }
+        }
+
+        // Auto-run backend test on load
+        window.onload = function() {
+            const debug = document.getElementById('debugInfo');
+            debug.innerHTML = `
+                <div class="status info">
+                    <strong>Current URL:</strong> ${window.location.href}<br>
+                    <strong>API URL:</strong> ${API_BASE_URL}<br>
+                    <strong>Browser:</strong> ${navigator.userAgent}
+                </div>
+            `;
+            
+            testBackend();
+        };
+    </script>
+</body>
+</html>

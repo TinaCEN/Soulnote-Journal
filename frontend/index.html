@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soulnote - Emotional Journaling</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="logo">Soulnote</h1>
+            <p class="tagline">Express, Analyze, Visualize Your Emotions</p>
+        </header>
+
+        <!-- Status indicator -->
+        <div id="statusIndicator" class="status-indicator">
+            <span id="statusText">Connecting to AI...</span>
+        </div>
+
+        <!-- Main content -->
+        <main class="main-content">
+            <!-- Input Section -->
+            <section class="input-section" id="inputSection">
+                <div class="tab-container">
+                    <button class="tab-btn active" data-tab="voice">
+                        🎤 Voice Recording
+                    </button>
+                    <button class="tab-btn" data-tab="text">
+                        ✍️ Text Input
+                    </button>
+                </div>
+
+                <!-- Voice Input Tab -->
+                <div class="tab-content active" id="voiceTab">
+                    <div class="voice-input">
+                        <div class="recording-visualizer" id="recordingVisualizer">
+                            <canvas id="visualizerCanvas"></canvas>
+                        </div>
+                        
+                        <div class="voice-controls">
+                            <button id="recordBtn" class="btn btn-primary btn-large">
+                                <span id="recordBtnIcon">🎤</span>
+                                <span id="recordBtnText">Start Recording</span>
+                            </button>
+                            <p class="hint">Click to record your voice journal</p>
+                        </div>
+
+                        <div id="audioPlayback" class="audio-playback hidden">
+                            <audio id="audioElement" controls></audio>
+                            <button id="analyzeVoiceBtn" class="btn btn-success">
+                                Analyze Emotions
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Input Tab -->
+                <div class="tab-content" id="textTab">
+                    <div class="text-input">
+                        <textarea 
+                            id="journalText" 
+                            class="journal-textarea"
+                            placeholder="Share your thoughts and feelings here...&#10;&#10;What's on your mind today?"
+                            rows="10"
+                        ></textarea>
+                        
+                        <button id="analyzeTextBtn" class="btn btn-primary btn-large">
+                            Analyze Emotions
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Loading Section -->
+            <section class="loading-section hidden" id="loadingSection">
+                <div class="spinner"></div>
+                <p id="loadingText">Analyzing your emotions...</p>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section hidden" id="resultsSection">
+                <h2>Your Emotional Journey</h2>
+
+                <!-- Transcribed Text (for voice input) -->
+                <div id="transcribedTextContainer" class="transcribed-text hidden">
+                    <h3>What you said:</h3>
+                    <p id="transcribedText"></p>
+                </div>
+
+                <!-- Emotion Analysis -->
+                <div class="emotion-analysis">
+                    <h3>Detected Emotions</h3>
+                    <div id="primaryEmotion" class="primary-emotion"></div>
+                    <div id="emotionsList" class="emotions-list"></div>
+                </div>
+
+                <!-- Philosophical Note -->
+                <div class="philosophical-note">
+                    <h3>Reflection</h3>
+                    <blockquote id="philosophicalNote"></blockquote>
+                </div>
+
+                <!-- Generated Poster -->
+                <div class="poster-preview">
+                    <h3>Your Emotional Poster</h3>
+                    <div id="posterContainer" class="poster-container">
+                        <img id="posterImage" src="" alt="Generated Poster">
+                    </div>
+                </div>
+
+                <!-- Export Options -->
+                <div class="export-section">
+                    <h3>Share Your Journey</h3>
+                    <div class="export-buttons">
+                        <button class="btn btn-export" data-platform="instagram">
+                            📷 Instagram
+                        </button>
+                        <button class="btn btn-export" data-platform="twitter">
+                            🐦 Twitter/X
+                        </button>
+                        <button class="btn btn-export" data-platform="story">
+                            📱 Story
+                        </button>
+                        <button class="btn btn-export" data-platform="square">
+                            🖼️ Square
+                        </button>
+                    </div>
+                </div>
+
+                <!-- New Journey Button -->
+                <button id="newJourneyBtn" class="btn btn-secondary">
+                    ✨ Start New Journey
+                </button>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Powered by AI • Made with ❤️</p>
+        </footer>
+    </div>
+
+    <script src="../static/js/app.js"></script>
+</body>
+</html>

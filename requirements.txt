@@ -1,0 +1,30 @@
+# Soulnote Backend Requirements
+
+# Web Framework
+Flask==3.0.0
+flask-cors==4.0.0
+Werkzeug==3.0.1
+
+# HTTP Client
+requests==2.31.0
+
+# Audio Processing
+SpeechRecognition>=3.10.0
+librosa>=0.10.0
+pydub>=0.25.1
+soundfile>=0.12.1
+
+# Data Processing
+numpy>=1.24.0
+scipy>=1.11.0
+
+# Image Processing
+Pillow==10.2.0
+matplotlib==3.8.2
+
+# AI/ML APIs
+openai>=1.0.0
+
+# Utilities
+python-dateutil==2.8.2
+pytz==2024.1
