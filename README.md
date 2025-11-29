@@ -12,6 +12,10 @@ Numbers:
 (Design) designs the interface based on requirements.
 - LI Yi-25049079g
  (Validation) tests the finished product and creates demo materials.
+
+## About us
+-![About us](https://github.com/user-attachments/assets/0e2121fc-ee42-470e-ab32-9b698cea6834)
+
  
 ## Modes
 
@@ -22,13 +26,13 @@ Numbers:
 ## Features
 
 - Voice recording and speech‑to‑text
-- ![The voice way](https://github.com/user-attachments/assets/f283e0ae-4d90-4982-bc74-c6c748646ae0)
+ ![The voice way](https://github.com/user-attachments/assets/f283e0ae-4d90-4982-bc74-c6c748646ae0)
 - Adjust the words to a better outcome
-- ![Adjust the words to a better outcome](https://github.com/user-attachments/assets/5c34a69c-9d6b-4537-b501-3009b41708ed)
+ ![Adjust the words to a better outcome](https://github.com/user-attachments/assets/5c34a69c-9d6b-4537-b501-3009b41708ed)
 - Personal emotional history 
-- ![Personal emotional history ](https://github.com/user-attachments/assets/b76c6137-a719-494a-abb1-cc3b8ba99a58)
+ ![Personal emotional history ](https://github.com/user-attachments/assets/b76c6137-a719-494a-abb1-cc3b8ba99a58)
 - Social art cart export (Instagram, X/Twitter)
-- ![Social art cart export](https://github.com/user-attachments/assets/1f78e941-b6ce-4c7d-aed1-fd7fcb340512)
+ ![Social art cart export](https://github.com/user-attachments/assets/1f78e941-b6ce-4c7d-aed1-fd7fcb340512)
 
 
 ## Tech Stack
