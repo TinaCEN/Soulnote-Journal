@@ -2,15 +2,15 @@
 
 Soulnote is an AI‑powered emotional journaling tool. It analyzes emotions from voice or text, generates artistic visual posters, and writes short philosophical reflections related to what you feel.
 
-Team：3YT
+## Team：3YT
 Numbers:
-Cen Sitian-25052928g:
+- Cen Sitian-25052928g:
 (Planning) proposes requirements and the framework. & (Delivery) integrates all outputs and completes project closure.
-Peng Quanyi-25069109g
+- Peng Quanyi-25069109g
 (Implementation) codes according to the design and requirements.
-MA Huanyu Noel-25058293g
+- MA Huanyu Noel-25058293g
 (Design) designs the interface based on requirements.
-LI Yi-25049079g
+- LI Yi-25049079g
  (Validation) tests the finished product and creates demo materials.
  
 ## Modes
