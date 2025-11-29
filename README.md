@@ -35,6 +35,11 @@ Numbers:
 
  
  ![Adjust the words to a better outcome](https://github.com/user-attachments/assets/5c34a69c-9d6b-4537-b501-3009b41708ed)
+ - Use text to input content
+
+
+  ![The text way](https://github.com/user-attachments/assets/225b4223-a8a5-462f-b22b-620029aa8729)
+
 - Personal emotional history 
 
  
